@@ -212,7 +212,11 @@ void Watcher::clearCallbacks() {
 }
 
 bool Watcher::isIgnored(std::string path) {
+
   for (auto it = mIgnoreGlobs.begin(); it != mIgnoreGlobs.end(); it++) {
+    cout << "Checking glob: " << it->mRaw << " against path: " << path << endl;
+    cout << "Negated: " << it->isNegated() << endl;
+    cout << "Matches: " << it->matches(path) << endl;
     if (it->isNegated() && it->matches(path)) {
       return false;
     }
