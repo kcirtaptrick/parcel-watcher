@@ -1,3 +1,7 @@
+# NOTE
+
+This is a temporary fork of `@parcel/watcher` for Deno which doesn't support npm package specifiers from git revisions. Includes unmerged changes.
+
 # @parcel/watcher
 
 A native C++ Node module for querying and subscribing to filesystem events. Used by [Parcel 2](https://github.com/parcel-bundler/parcel).

@@ -1,5 +1,5 @@
 {
-  "name": "@parcel/watcher",
+  "name": "@kcirtaptrick/watcher",
   "version": "2.5.1",
   "main": "index.js",
   "types": "index.d.ts",
